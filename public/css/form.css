@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+label {
+	font-weight: 400;
+	color: #444;
+	font-size: 13px;
+}
+.radio label, .checkbox label {
+	color: #555;
+}
+
+
+
+.form-control {
+	background-color:#F8F8F8;
+	border-bottom-color:#EAEAEA;
+	border-right-color:#EAEAEA;
+	border-top-color:#D4D4D4;
+	border-left-color:#D4D4D4;
+	border-radius: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(96, 96, 96, 0.025), 0 0 4px rgba(174, 173, 179, 0.6);
+          box-shadow: inset 0 1px 1px rgba(96, 96, 96, 0.025), 0 0 4px rgba(174, 173, 179, 0.6);
+	font-size:13px;
+}
+
+.form-control:focus {
+	background-color: #F4F4F4;
+	border-bottom-color:#EAEAEA;
+	border-right-color:#EAEAEA;
+	border-top-color:#D4D4D4;
+	border-left-color:#D4D4D4;
+	outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.025), 0 0 10px rgba(174, 173, 179, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.025), 0 0 10px rgba(174, 173, 179, 0.6);
+}
+
+.form-group a {
+	color:#FF6300;
+}
+.form-group a:hover {
+	color:#E85C00;
+}
+
+/*** Select ***/
+
+/* Fix font select size*/
+.dropdown-menu {
+	font-size:13px;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #497F43;
+}
+
+.dropdown-menu {
+  border-radius: 0px; /*** Elimina bordes redondos del fondo del select***/
+}
+
+.dropdown-menu li:focus, .dropdown-menu li:hover, .dropdown-menu a:focus, .dropdown-menu a:hover, {
+	border:none!important;
+}
+
+/*** Addon ***/
+.input-group-addon {
+  color: #ffffff;
+  background-color: #497F43;
+}
+
+
+/***** Botnes generales *****/
+
+
+.btn-green {
+	color: #FFF;
+	background-color: #497F43;
+	font-size:13px;
+	/*border-radius: 0px;*/
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active,
+.btn-green.active,
+.open .dropdown-toggle.btn-green {
+	color: #FFF;
+	background-color: #428A35;
+
+}
+
+.btn-green .caret {
+  border-top-color: #FFFFFF;
+}
+.dropup .btn-green .caret {
+  border-bottom-color: #FFFFFF;
+}
+
+.button-group {
+	padding-top:30px;
+}
+
+
+/*** Footer contentRight ***/
+.labelright label {
+	font-size:12px;
+	line-height:20px;
+}
+
+/*** Validate ***/
+
+.modal-body span {
+	margin-right:20px;
+	font-size:20px;
+}
+.has-success .control-label, .glyphicon-ok, .glyphicon-pencil {
+	color:#497F43;
+}
+
+.glyphicon-check {
+	color:#C86422;
+}
+
+.has-success .form-control {
+	border-color:#497F43;
+}
+.has-error .control-label, .glyphicon-remove {
+	color:#BA2025;
+}
+.has-error .form-control {
+	border-color:#BA2025;
+}
+.has-warning .control-label, .glyphicon-warning-sign {
+	color:#E8AE00;
+}
+.has-warning .form-control {
+	border-color:#E8AE00;
+}
+.has-feedback .form-control-feedback {
+	position:relative;
+	top:-28px;
+	left:220px;
+	text-align:center;
+	width:34px;
+}
+/*Estilos para el Dual Listbox*/
+.bootstrap-duallistbox-container .filter, .banner{
+	padding-bottom:5px;
+	}
+.bootstrap-duallistbox-container .box1 .btn-group{
+	float:right;
+	}
+
+/*** Calendar ***/
+.input-append,.input-prepend{margin-bottom:5px;main:0;white-space:nowrap
+}
+
+.input-append input,.input-prepend input,.input-append select,.input-prepend select,.input-append .uneditable-input,.input-prepend .uneditable-input,.input-append .dropdown-menu,.input-prepend .dropdown-menu{main:14px
+}
+
+
+
+.input-append input:focus,.input-prepend input:focus,.input-append select:focus,.input-prepend select:focus,.input-append .uneditable-input:focus,.input-prepend .uneditable-input:focus{z-index:2
+}
+
+.input-append .add-on,.input-prepend .add-on{display:inline-block;	color: #FFF;
+	background-color: #497F43;
+	font-size:13px;
+	 -moz-user-select: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+	-webkit-border-top-right-radius: 4px !important;
+	-webkit-border-bottom-right-radius: 4px !important;
+	-moz-border-radius-topright: 4px !important;
+	-moz-border-radius-bottomright: 4px !important;
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+}
+.input-append .add-on:hover,.input-prepend .add-on:hover{
+	color: #FFF;
+	background-color: #428A35 !important;}
+
+
+.input-append .add-on,.input-prepend .add-on,.input-append .btn,.input-prepend .btn,.input-append .btn-group>.dropdown-toggle,.input-prepend .btn-group>.dropdown-toggle{vertical-align:top;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0
+}
+
+.input-append .active,.input-prepend .active{background-color:#a9dba9;border-color:#46a546
+}
+
+
+/*** Ajustes para calendario ***/
+.form-calendar {
+	width:100%!important;
+}
+
+.add-on {
+	margin-left:-43px;
+}

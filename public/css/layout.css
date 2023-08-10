@@ -1,0 +1,191 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+	background-color:#FAFAFA;
+}
+
+/********* DIVs de Distribución **********/
+/***** footerLeft, footerRight, bodyHeader, containerHeader, bodyFooter, containerFooter  *****/
+
+/***** Header *****/
+
+#topHeader {
+	padding-bottom:15px;
+	padding-top:15px;
+	height:60px;
+}
+
+#menuTop {
+	padding-top:5px;
+}
+
+#middleHeader {
+	height:100px;
+	padding-bottom:20px;
+}
+
+
+#bottomHeader {
+	height:40px;
+}
+
+
+#logo, #snit {
+	text-align:center;
+}
+
+#bottomHeader {
+	background-image: url(../images/backgrounds/menu.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height:40px;
+}
+
+
+/***** Content *****/
+#content {
+	padding-top:20px;
+	padding-bottom:40px;
+}
+
+#contentLeft {
+}
+
+#contentRight {
+}
+
+#tabsContainer {
+}
+
+.filter, .banner {
+	padding-bottom:30px;
+}
+
+#foto{
+	height:250px;
+	width:100%;}
+
+#fotoMapa{
+	height:450px;
+	width:100%;
+}
+
+.buttons {
+	padding-top:20px;
+}
+
+
+/***** Footer *****/
+
+#copyright {
+	background-image: url(../images/backgrounds/copyright.png);
+	height: 32px;
+	margin-bottom:30px;
+}
+#social {
+	margin-bottom:30px;
+}
+#sepBottom {
+	background-image: url(../images/backgrounds/sepBottom.png);
+	background-repeat: repeat-x;
+	background-position: center center;
+	height: 60px;
+	margin-bottom:30px;
+}
+#address {
+	margin-bottom:70px;
+}
+
+/*** Group Wrappers ***/
+.wrapper1 {
+	background-color:#F3F3F3;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-bottom:20px;
+-webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.35);
+-moz-box-shadow:    0px 7px 5px 0px rgba(0, 0, 0, 0.35);
+box-shadow:         0px 7px 5px 0px rgba(0, 0, 0, 0.35);
+}
+.wrapper1:hover {
+	background-color:#EFEFEF;
+}
+
+.wrapper2 {
+	background-color:#F0F0F0;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-bottom:20px;
+-webkit-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.35);
+-moz-box-shadow:    0px 7px 5px 0px rgba(0, 0, 0, 0.35);
+box-shadow:         0px 7px 5px 0px rgba(0, 0, 0, 0.35);
+}
+.wrapper2:hover {
+	background-color:#EBEBEB;
+}
+
+
+
+/*** Results ***/
+
+.result {
+	padding-bottom: 30px;
+	padding-top: 30px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCC;
+}
+
+/*** Bloques centrados ***/
+#paginationContainer {
+	text-align:center;
+}
+
+
+/*** Responsive Google Map ***/
+.google-maps {
+	position: relative;
+	padding-bottom: 75%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/*** Profile Images ***/
+.imgCentered {
+	padding-bottom:20px;
+	padding-top:20px;
+}
+
+.imgCentered img {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+@media (min-width: 1200px) {
+#bottomHeader {
+	background-image: url(../images/backgrounds/menu1920.png);
+}
+#menu {
+	padding-left:0px;
+}
+#user {
+	padding-right:0px;
+}
+}
+
+

@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Summernote WYSIWYG */
+@import url("summernote.css");
+
+/* Calendar */
+@import url("bootstrap-datetimepicker.min.css");
+
+@import url("layout.css");
+@import url("format.css");
+@import url("menu.css");
+@import url("form.css");
+
+/* Radio & Check */
+@import url("prettyCheckable.css");
+
+/* Select */
+@import url("bootstrap-select.css");
+/* http://silviomoreto.github.io/bootstrap-select/ */
+
+/* Slider */
+@import url("slider.css");
+/* http://seiyria.github.io/bootstrap-slider/ */
+
+
+/* Push Menu */
+/* http://multi-level-push-menu.make.rs */
+@import url("pushmenu.css");
+
+/* Font Awesome */
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css");
+
+
+
+
+a:hover {
+	text-decoration:none;
+}
+
+br.clear {
+	clear:both;
+}
+
+
+hr {
+  border-top: 2px solid #ff0000;
+}
+
+/* CSS LUIS,LUZ, MECHE , ARMANDO*/
+.popAyuda{
+    margin-top: 25%;
+    position: relative;
+}
+.espacioTitulosContenido{
+    margin-bottom: 20px;
+}
+
+#botones{
+    padding-top: 40px;
+}
+
+/*ESTYLO DEL ADM.*/
+$(document).ready(function(){
+$("#mytable #checkall").click(function () {
+        if ($("#mytable #checkall").is(':checked')) {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", true);
+            });
+
+        } else {
+            $("#mytable input[type=checkbox]").each(function () {
+                $(this).prop("checked", false);
+            });
+        }
+    });
+
+    $("[data-toggle=tooltip]").tooltip();
+});

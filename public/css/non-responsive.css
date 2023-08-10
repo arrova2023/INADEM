@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Non-responsive overrides
+ *
+ * Utilitze the following CSS to disable the responsive-ness of the container,
+ * grid system, and navbar.
+ */
+
+/* Reset the container */
+.container {
+  width: 970px;
+   max-width: none !important;
+}
+
+@media (min-width: 1200px) {
+.container {
+  width: 1170px;
+
+}
+
+}
+
+.container .navbar-header,
+.container .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Always float the navbar header */
+.navbar-header {
+  float: left;
+}
+
+/* Undo the collapsing navbar */
+.navbar-collapse {
+  display: block !important;
+  height: auto !important;
+  padding-bottom: 0;
+  overflow: visible !important;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-brand {
+  margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.navbar-nav > li {
+  float: left;
+}
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.navbar-nav.navbar-right {
+  float: right;
+}
+
+/* Undo custom dropdowns */
+.navbar .open .dropdown-menu {
+  position: absolute;
+  float: left;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 0 1px 1px;
+  border-radius: 0 0 4px 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.navbar .open .dropdown-menu > li > a {
+  color: #333;
+}
+.navbar .open .dropdown-menu > li > a:hover,
+.navbar .open .dropdown-menu > li > a:focus,
+.navbar .open .dropdown-menu > .active > a,
+.navbar .open .dropdown-menu > .active > a:hover,
+.navbar .open .dropdown-menu > .active > a:focus {
+  color: #fff !important;
+  background-color: #428bca !important;
+}
+.navbar .open .dropdown-menu > .disabled > a,
+.navbar .open .dropdown-menu > .disabled > a:hover,
+.navbar .open .dropdown-menu > .disabled > a:focus {
+  color: #999 !important;
+  background-color: transparent !important;
+}
+
+
+/* Fix Push, Pull and Offset */
+
+  .col-xs-push-1 {
+    left: 8.333333333333332%;
+  }
+  .col-xs-push-2 {
+    left: 16.666666666666664%;
+  }
+  .col-xs-push-3 {
+    left: 25%;
+  }
+  .col-xs-push-4 {
+    left: 33.33333333333333%;
+  }
+  .col-xs-push-5 {
+    left: 41.66666666666667%;
+  }
+  .col-xs-push-6 {
+    left: 50%;
+  }
+  .col-xs-push-7 {
+    left: 58.333333333333336%;
+  }
+  .col-xs-push-8 {
+    left: 66.66666666666666%;
+  }
+  .col-xs-push-9 {
+    left: 75%;
+  }
+  .col-xs-push-10 {
+    left: 83.33333333333334%;
+  }
+  .col-xs-push-11 {
+    left: 91.66666666666666%;
+  }
+  .col-xs-pull-1 {
+    right: 8.333333333333332%;
+  }
+  .col-xs-pull-2 {
+    right: 16.666666666666664%;
+  }
+  .col-xs-pull-3 {
+    right: 25%;
+  }
+  .col-xs-pull-4 {
+    right: 33.33333333333333%;
+  }
+  .col-xs-pull-5 {
+    right: 41.66666666666667%;
+  }
+  .col-xs-pull-6 {
+    right: 50%;
+  }
+  .col-xs-pull-7 {
+    right: 58.333333333333336%;
+  }
+  .col-xs-pull-8 {
+    right: 66.66666666666666%;
+  }
+  .col-xs-pull-9 {
+    right: 75%;
+  }
+  .col-xs-pull-10 {
+    right: 83.33333333333334%;
+  }
+  .col-xs-pull-11 {
+    right: 91.66666666666666%;
+  }
+  .col-xs-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+  .col-xs-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  .col-xs-offset-3 {
+    margin-left: 25%;
+  }
+  .col-xs-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  .col-xs-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  .col-xs-offset-6 {
+    margin-left: 50%;
+  }
+  .col-xs-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  .col-xs-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  .col-xs-offset-9 {
+    margin-left: 75%;
+  }
+  .col-xs-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  .col-xs-offset-11 {
+    margin-left: 91.66666666666666%;
+  }

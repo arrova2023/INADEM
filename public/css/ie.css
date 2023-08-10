@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+#formContact .input {
+	background: url(../images/backgrounds/input.png);
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 160px;
+	border:none;
+}
+#formContact input[type="text"] {
+	height: 25px;
+	width: 160px;
+}
+
+#formContact .textarea {
+	background: url(../images/backgrounds/textarea.png);
+	background-repeat: no-repeat;
+	height: 80px;
+	width: 240px;
+	border:none;
+}
+#formContact textarea {
+	height: 80px;
+	width: 240px;
+}
+
+#formContact .button {
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 70px;
+	border:none;
+	background-image: url(../images/backgrounds/button.png);
+	background-position: 0px 0px;
+}
+#formContact .button:hover {
+	background-position: 0px -30px;
+}
+#formContact input.buttonSend, #formContact input.buttonSend:hover {
+	height: 30px;
+	width: 70px;
+	border:none;
+	background:none;
+}
+
+#formContact select {
+	margin-top:-3px;
+}
+#formContact option {
+	background:transparent;
+}

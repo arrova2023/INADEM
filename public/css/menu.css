@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+#navTop {
+	font-family: "SoberanaSans";
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.sf-menu, #user, #navFooter {
+	font-family:"SoberanaTitular";
+}
+
+
+/*** User ***/
+
+#user a {
+	font-family:"SoberanaTitular";
+	color: #5F5E5C;
+	font-size:11px;
+	line-height:15px;
+	display:inline-block;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	margin:0px;
+}
+#user a:hover {
+
+}
+#user a span {
+	margin-right:5px;
+}
+#user a:hover span {
+	color:#497F43;
+}
+
+/************** SuperFish *************/
+/*** no mover***/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu li {
+	position: relative;
+}
+.sf-menu ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+.sf-menu > li {
+	float: left;
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+	display: block;
+}
+
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+.sf-menu ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	margin-bottom: 1em;
+	/*** Centra menú ***/
+    /*max-width: 840px;  for  below IE7 use `width: 660px;` */
+    margin: 0 auto;
+}
+.sf-menu ul {
+	box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+	min-width: 12em; /* allow long menu items to determine submenu width */
+	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
+	background: #e9e9ea; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e9e9ea 0%, #aeadb3 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9e9ea), color-stop(100%,#aeadb3)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e9e9ea 0%,#aeadb3 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e9e9ea 0%,#aeadb3 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e9e9ea 0%,#aeadb3 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e9e9ea 0%,#aeadb3 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#aeadb3',GradientType=0 ); /* IE6-9 */
+}
+.sf-menu a {
+	text-decoration: none;
+	zoom: 1;
+	padding-top: 10px;
+	padding-right: 3px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+}
+.sf-menu a {
+	color: #5F5E5C;
+	font-size:11px;
+	line-height:15px;
+}
+.sf-menu li {
+	/*background: #000;  Fondo del menú principal en estado normal */
+	white-space: nowrap; /* no need for Supersubs plugin */
+	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
+	-webkit-transition: background .2s;
+	transition: background .2s;
+
+	/*background-image: url(../images/backgrounds/menuLI.png);
+	background-repeat: no-repeat;
+	background-position: right center;*/
+
+}
+.sf-menu ul li {
+	/* background: #FFF; Background de segundo nivel */
+}
+
+.sf-menu ul li:hover {
+	/* background: #FF0000; */
+}
+
+.sf-menu ul li a {
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:11px;
+}
+
+.sf-menu ul li:hover a {
+	text-decoration: underline;
+	color: #868582;
+}
+
+.sf-menu ul ul li {
+	background: #FF000;
+}
+.sf-menu li:hover,
+.sf-menu li.sfHover {
+	background: #fafafa; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fafafa 0%, #e9e9ea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#e9e9ea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fafafa 0%,#e9e9ea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fafafa 0%,#e9e9ea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fafafa 0%,#e9e9ea 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fafafa 0%,#e9e9ea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e9e9ea',GradientType=0 ); /* IE6-9 */
+	/* only transition out, not in */
+	-webkit-transition: none;
+	transition: none;
+}
+
+.sf-menu li:hover li,
+.sf-menu li.sfHover li {
+	background: none;
+}
+
+
+
+
+
+
+
+
+/********* Estilos Menús **********/
+#navTop, #navLeft, #navRight, #navFooter, #navCatalog {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+#navTop a, #navLeft a, #navRight a, #navFooter a, #navCatalog a {
+	display:block;
+}
+
+
+
+/***** Menú Top *****/
+#navTop li {
+	float:left;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#navTop a {
+	display: block;
+	color: #5F5E5C;
+}
+
+#navTop a:hover {
+	text-decoration: underline;
+	color: #868582;
+}
+
+/***** Menúas Auxiliares: Left, Right, Catalog o Footer *****/
+#navRight li {
+	width:120px;
+}
+
+#navRight a {
+	display: block;
+}
+
+#navFooter li {
+	width:120px;
+}
+
+#navFooter a {
+	display: block;
+}

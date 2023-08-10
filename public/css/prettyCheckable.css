@@ -1,0 +1,108 @@
+/* Check & Radio */
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {clear: both;}
+
+.clearfix {*zoom: 1;}
+
+.prettycheckbox,
+.prettyradio {
+    display: inline-block;
+    padding:0;
+    margin:0;
+}
+
+.prettycheckbox a,
+.prettyradio a{
+    width: 30px;
+    height: 30px;
+    background: url(../images/backgrounds/prettyCheckable-gray.png) top left no-repeat;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin:0;
+}
+
+.prettycheckbox.darkGray a,
+.prettyradio.darkGray a{
+	background-image: url(../images/backgrounds/prettyCheckable-gray.png);
+}
+
+.prettyradio a {background-position: 0 -120px;}
+
+.prettycheckbox a:focus,
+.prettyradio a:focus {outline: 0 none;}
+
+.prettycheckbox a:focus{background-position: 0 -30px;}
+.prettyradio a:focus{background-position: 0 -150px;}
+
+.prettycheckbox a.checked{ background-position: 0 -60px; }
+.prettyradio a.checked { background-position: 0 -180px; }
+
+.prettycheckbox a.checked:focus{ background-position: 0 -90px; }
+.prettyradio a.checked:focus { background-position: 0 -210px; }
+
+/*** Checkbox inside table ***/
+.table-striped .prettycheckbox a {
+	height: 18px;
+	background-position: left -8px;
+}
+.table-striped .prettycheckbox a:focus {
+	background-position: left -38px;
+}
+.table-striped .prettycheckbox a.checked {
+	background-position: left -68px;
+}
+.table-striped .prettycheckbox a.checked:focus {
+	background-position: left -98px;
+}
+
+.table-striped .prettyradio a {
+	height: 18px;
+	background-position: left -128px;
+}
+.table-striped .prettyradio a:focus {
+	background-position: left -158px;
+}
+.table-striped .prettyradio a.checked {
+	background-position: left -188px;
+}
+.table-striped .prettyradio a.checked:focus {
+	background-position: left -218px;
+}
+
+
+.prettycheckbox label,
+.prettyradio label {
+  display: block;
+  float: left;
+  margin: 6px 5px;
+  cursor: pointer;
+}
+
+.prettycheckbox.disabled a,
+.prettyradio.disabled a,
+.prettycheckbox.disabled label,
+.prettyradio.disabled label{
+  cursor:not-allowed;
+}
+
+.prettycheckbox.disabled a {
+  background-position: 0 -240px;
+}
+
+.prettyradio.disabled a {
+  background-position: 0 -270px;
+}
+
+/*** Fix ***/
+
+.radio, .checkbox {
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-left:5px;
+}
